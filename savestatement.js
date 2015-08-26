@@ -131,7 +131,7 @@ function tryReady(time_elapsed) {
 			var currentRow = entries[i];
 			if (!currentRow.ignore) {
 				csv += currentRow.date + "," + currentRow.description + ",,,";
-				if (values > 0) {
+				if (parseInt(currentRow.value) > 0) {
 				  csv += currentRow.value.replace("£", "") + ",,";
 				} else {
 				  csv += ",," + currentRow.value.replace("£", "") + ",";
