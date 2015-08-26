@@ -132,9 +132,9 @@ function tryReady(time_elapsed) {
 			if (!currentRow.ignore) {
 				csv += currentRow.date + "," + currentRow.description + ",,,";
 				if (values > 0) {
-				  csv += currentRow.value.replace("£", "") + ",,"
+				  csv += currentRow.value.replace("£", "") + ",,";
 				} else {
-				  csv += ",," + currentRow.value.replace("£", "") + ","
+				  csv += ",," + currentRow.value.replace("£", "") + ",";
 				}
 				csv += "<br />";
 				
