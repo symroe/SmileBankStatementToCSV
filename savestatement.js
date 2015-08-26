@@ -1,5 +1,5 @@
 // Init variables
-var csv = "";
+var csv = "Date,Payee,Category,Memo,Outflow,Inflow";
 var entries = [];
 var head  = document.getElementsByTagName('head')[0];
 
