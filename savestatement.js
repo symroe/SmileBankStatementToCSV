@@ -130,11 +130,11 @@ function tryReady(time_elapsed) {
 		for (i = 0; i < entries.length; i++) {
 			var currentRow = entries[i];
 			if (!currentRow.ignore) {
-				csv += currentRow.date + "," + currentRow.description + ",,,";
+				csv += currentRow.date + "," + currentRow.description + ",,";
 				if (parseInt(currentRow.value) > 0) {
-				  csv += currentRow.value.replace("£", "") + ",,";
+				  csv += currentRow.value.replace("£", "") + ",";
 				} else {
-				  csv += ",," + currentRow.value.replace("£", "") + ",";
+				  csv += "," + currentRow.value.replace("£", "") + ",";
 				}
 				csv += "<br />";
 				
